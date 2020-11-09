@@ -13,15 +13,16 @@ function handleServer(req, res) {
 	else if(req.url == "/contact"){
       		res.statusCode = 200;
 		res.setHeader("Content-Type","application/json");
-		res.end('{phone: '18602100000',email: 'guestcaredominos@jublfood.com'}');
+		res.end({phone: '18602100000',email: 'guestcaredominos@jublfood.com'});
     	}else{
 		res.statusCode = 404;
 	}
   }
 		
 }
-httpServer.listen(8081, "localhost, ()=>{
-	console.log(`server running at http://${hostname}:${port}`);
+httpServer.listen(8081, "localhost", ()=>{
+	console.log(`server running at 8081`);
+
 });
 
 module.exports = httpServer;
