@@ -20,5 +20,8 @@ function handleServer(req, res) {
   }
 		
 }
+httpServer.listen(8081, "localhost, ()=>{
+	console.log(`server running at http://${hostname}:${port}`);
+});
 
 module.exports = httpServer;
