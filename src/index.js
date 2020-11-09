@@ -17,6 +17,7 @@ function handleServer(req, res) {
     	}else{
 		res.statusCode = 404;
 	}
+  }
 		
 }
 
