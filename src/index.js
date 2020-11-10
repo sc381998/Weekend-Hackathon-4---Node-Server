@@ -4,7 +4,7 @@ const httpServer = http.createServer(handleServer);
 
 
 function handleServer(req, res) {
-    if(req.method == "GET"){
+   
 		if(req.url == "/welcome"){
 	     	res.statusCode = 200;
 			res.setHeader("Content-Type","text/plain");
@@ -17,7 +17,7 @@ function handleServer(req, res) {
 	    }else{
 			res.statusCode = 404;
 		}
-  	}
+  	
 		
 }
 httpServer.listen(8081, "localhost", ()=>{
